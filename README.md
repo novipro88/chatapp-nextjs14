@@ -30,6 +30,7 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
 NEXT_PUBLIC_STREAM_KEY=
 STREAM_SECRET=
+
 NEXT_PUBLIC_WEB_PUSH_PUBLIC_KEY=
 WEB_PUSH_PRIVATE_KEY=
 ```
@@ -43,6 +44,14 @@ If you want to learn how to create it please follow below tutorial👇: <br />
 
 ---
 
-### Image#1 for ChatApp
+### Image#1: welcome page
+
+![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/c_limit,w_800/f_auto/q_auto/qpo8kupgchp8kporae7g?_a=BAVAfVBy0)
+
+### Image#2: sign-in/sign-up with clerk
+
+![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/c_limit,w_800/f_auto/q_auto/opzysz54qmfwsv6ugqaz?_a=BAVAfVBy0)
+
+### Image#3: chat online
 
 ![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/f_auto/q_auto/sn51texkee3zi1p6oxbz?_a=BAVAfVBy0)

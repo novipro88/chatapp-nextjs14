@@ -24,11 +24,18 @@ make a file name .env.local on root and input your own environment for this app.
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 CLERK_WEBHOOK_SECRET=
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
 NEXT_PUBLIC_STREAM_KEY=
 STREAM_SECRET=
 NEXT_PUBLIC_WEB_PUSH_PUBLIC_KEY=
 WEB_PUSH_PRIVATE_KEY=
 ```
+
+If you want to learn how to create it please follow below tutorial👇: <br />
+➡ Tutorial Link 💚: [Next.js WhatsApp Web Clone (Stream, Clerk Auth, Web Push Notifications, Tailwind CSS, TypeScript)](https://www.youtube.com/watch?v=9afMU7GOcAg&t=3824s)
 
 ---
 
@@ -36,4 +43,6 @@ WEB_PUSH_PRIVATE_KEY=
 
 ---
 
-![Next.js Web Chat App](https://res.cloudinary.com/dtnzi8jjv/image/upload/v1702024680/Screenshot_2023-12-08_153548_tobl7i.png)
+### Image#1 for ChatApp
+
+![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/f_auto/q_auto/sn51texkee3zi1p6oxbz?_a=BAVAfVBy0)

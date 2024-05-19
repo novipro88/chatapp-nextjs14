@@ -1,56 +1,66 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { StreamChat } from "stream-chat";
+// import { useEffect, useState } from "react";
+import { useUser } from "@clerk/nextjs";
 import {
   Channel,
   ChannelHeader,
+  ChannelList,
   Chat,
+  LoadingIndicator,
   MessageInput,
   MessageList,
   Thread,
   Window,
 } from "stream-chat-react";
-
-const userId = "user_2ggIY5mg08pqFuDqQGb0khGG67I";
-
-const chatClient = StreamChat.getInstance(process.env.NEXT_PUBLIC_STREAM_KEY!);
-
-chatClient.connectUser(
-  {
-    id: userId,
-    name: "Project Pro.",
-  },
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidXNlcl8yZ2dJWTVtZzA4cHFGdURxUUdiMGtoR0c2N0kifQ.ipVivlv3O1VDxBiCoxKjh2wkTqPoH5rdNkqVqRGUM34"
-);
-
-const channel = chatClient.channel("messaging", "channel_1", {
-  name: "Channel #1",
-  members: [userId],
-});
+import useInitializeChatClient from "./useInitializeChatClient";
 
 export default function ChatPage() {
-  const [isMounted, setIsMounted] = useState(false);
+  // const [isMounted, setIsMounted] = useState(false);
+  const chatClient = useInitializeChatClient();
+  const { user } = useUser();
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setIsMounted(true);
+  // }, []);
 
-  if (!isMounted) {
-    return null;
+  if (!chatClient || !user) {
+    return (
+      <div className="flex h-screen items-center justify-center">
+        <LoadingIndicator size={40} />
+      </div>
+    );
   }
 
+  // if (!isMounted) {
+  //   return null;
+  // }
+
   return (
-    <div>
+    <div className="h-screen">
       <Chat client={chatClient}>
-        <Channel channel={channel}>
-          <Window>
-            <ChannelHeader />
-            <MessageList />
-            <MessageInput />
-          </Window>
-          <Thread />
-        </Channel>
+        <div className="flex h-full flex-row">
+          <div className="w-full max-w-[360px]">
+            <ChannelList
+              filters={{
+                type: "messaging",
+                members: { $in: [user.id] },
+              }}
+              sort={{ last_message_at: -1 }}
+              options={{ state: true, presence: true, limit: 10 }}
+            />
+          </div>
+          <div className="h-full w-full">
+            <Channel>
+              <Window>
+                <ChannelHeader />
+                <MessageList />
+                <MessageInput />
+              </Window>
+              <Thread />
+            </Channel>
+          </div>
+        </div>
       </Chat>
     </div>
   );

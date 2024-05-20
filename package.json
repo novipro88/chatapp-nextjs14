@@ -1,5 +1,5 @@
 {
-  "name": "chatapp",
+  "name": "nextjs-webchat",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,32 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^5.0.12",
-    "@clerk/themes": "^2.1.6",
-    "@t3-oss/env-nextjs": "^0.10.1",
-    "@types/web-push": "^3.6.3",
-    "eslint-config-prettier": "^9.1.0",
-    "lucide-react": "^0.378.0",
-    "next": "14.2.3",
+    "@clerk/nextjs": "^4.23.2",
+    "@clerk/themes": "^1.7.5",
+    "@t3-oss/env-nextjs": "^0.6.1",
+    "@types/node": "20.5.1",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "@types/web-push": "^3.3.2",
+    "autoprefixer": "10.4.15",
+    "eslint": "8.47.0",
+    "eslint-config-next": "^14.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "lucide-react": "^0.268.0",
+    "next": "^14.0.3",
+    "postcss": "8.4.28",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.4.1",
-    "react": "^18",
-    "react-dom": "^18",
-    "stream-chat": "^8.33.0",
-    "stream-chat-react": "^11.18.1",
-    "svix": "^1.24.0",
-    "tailwind-merge": "^2.3.0",
-    "web-push": "^3.6.7",
-    "zod": "^3.23.8"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "stream-chat": "^8.11.0",
+    "stream-chat-react": "^10.9.0",
+    "svix": "^1.8.1",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6",
+    "web-push": "^3.6.4",
+    "zod": "^3.22.2"
   }
 }

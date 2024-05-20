@@ -2,7 +2,6 @@ export interface StreamPushEvent {
   message: Message;
   user: User;
   channel: Channel;
-  request_info: RequestInfo;
 }
 
 export interface Message {
@@ -11,14 +10,12 @@ export interface Message {
   html: string;
   type: string;
   user: any;
-  attachments: Attachment[];
+  attachments: any[];
   latest_reactions: any[];
   own_reactions: any[];
   reaction_counts: any;
   reaction_scores: any;
-  reaction_groups: any;
   reply_count: number;
-  deleted_reply_count: number;
   cid: string;
   created_at: string;
   updated_at: string;
@@ -29,15 +26,6 @@ export interface Message {
   pinned_at: any;
   pinned_by: any;
   pin_expires: any;
-}
-
-export interface Attachment {
-  thumb_url: string;
-  type: string;
-  fallback: string;
-  image_url: string;
-  original_width: number;
-  original_height: number;
 }
 
 export interface User {
@@ -66,6 +54,7 @@ export interface Channel {
   member_count: number;
   config: Config;
   auto_translation_language: string;
+  name: string;
 }
 
 export interface CreatedBy {
@@ -76,21 +65,19 @@ export interface CreatedBy {
   last_active: string;
   banned: boolean;
   online: boolean;
-  image: string;
   name: string;
+  image: string;
 }
 
 export interface Member {
   user_id: string;
   user: User2;
-  status: string;
   created_at: string;
   updated_at: string;
   banned: boolean;
   shadow_banned: boolean;
   role: string;
   channel_role: string;
-  notifications_muted: boolean;
 }
 
 export interface User2 {
@@ -98,7 +85,7 @@ export interface User2 {
   role: string;
   created_at: string;
   updated_at: string;
-  last_active: string;
+  last_active?: string;
   banned: boolean;
   online: boolean;
   language?: string;
@@ -126,7 +113,6 @@ export interface Config {
   push_notifications: boolean;
   reminders: boolean;
   mark_messages_pending: boolean;
-  polls: boolean;
   message_retention: string;
   max_message_length: number;
   automod: string;
@@ -134,11 +120,4 @@ export interface Config {
   created_at: string;
   updated_at: string;
   commands: string[];
-}
-
-export interface RequestInfo {
-  type: string;
-  ip: string;
-  user_agent: string;
-  sdk: string;
 }

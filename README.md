@@ -46,12 +46,16 @@ If you want to learn how to create it please follow below tutorial👇: <br />
 
 ### Image#1: welcome page
 
-![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/c_limit,w_800/f_auto/q_auto/qpo8kupgchp8kporae7g?_a=BAVAfVBy0)
+![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/c_limit,w_800/c_limit,w_800/f_auto/q_auto/qpo8kupgchp8kporae7g?_a=BAVAfVBy0)
 
 ### Image#2: sign-in/sign-up with clerk
 
-![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/c_limit,w_800/f_auto/q_auto/opzysz54qmfwsv6ugqaz?_a=BAVAfVBy0)
+![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/c_limit,w_800/c_limit,w_800/f_auto/q_auto/opzysz54qmfwsv6ugqaz?_a=BAVAfVBy0)
 
 ### Image#3: chat online
 
-![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/f_auto/q_auto/sn51texkee3zi1p6oxbz?_a=BAVAfVBy0)
+![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/c_limit,w_800/f_auto/q_auto/sn51texkee3zi1p6oxbz?_a=BAVAfVBy0)
+
+### Image#4: light/dark theme
+
+![Next.js Web Chat App](https://res.cloudinary.com/dymu4drhj/image/upload/c_limit,w_800/f_auto/q_auto/ammgiye7d8nneumhqr7q?_a=BAVAfVBy0)
